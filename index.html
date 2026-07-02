@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <h1 class="initials">J&G</h1>
+            <p>You are invited!</p>
+            <button onclick="openInvitation()">Tap to open</button>
+        </div>
+    </div>
+
+    <div id="main-content" class="main-content hidden">
+        <header class="hero-section">
+            <h1 class="couple-names">Jyothish <span class="ampersand">&</span> Gowri</h1>
+            <p class="invite-text">We cordially invite you to join us at our wedding party</p>
+        </header>
+
+        <main class="events-container">
+            
+            <section class="event-card main-event">
+                <h2>Wedding Reception</h2>
+                <div class="date-badge">
+                    <h3>Sunday</h3>
+                    <div class="main-date">November 15, 2026</div>
+                    <h3>at 5'O Clock in the evening</h3>
+                </div>
+                <div class="venue-details">
+                    <p class="venue-name">CSI Peroorkada</p>
+                    <p class="venue-sub">Peroorkada, Trivandrum</p>
+                </div>
+            </section>
+
+            <section class="event-card ceremony">
+                <h2>Wedding Ceremony</h2>
+                <p class="date-line"><strong>11th November 2026</strong> @ Thrissur</p>
+                <p class="venue-name-sub">Guruvayoor Sreekrishna Temple, Thrissur</p>
+                <p class="muhoortham">Muhoortham: 09:30 am - 10:00 am</p>
+            </section>
+
+        </main>
+
+        <footer class="footer-gallery">
+            <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=1000&auto=format&fit=crop" alt="Wedding Celebration Image" class="footer-img">
+            <h2 class="closing-text">Do join us!</h2>
+        </footer>
+    </div>
+
+    <script>
+        function openInvitation() {
+            const overlay = document.getElementById('overlay');
+            const mainContent = document.getElementById('main-content');
+            
+            // Slide up/fade out overlay
+            overlay.classList.add('fade-out');
+            
+            // Reveal main content with a smooth animation
+            mainContent.classList.remove('hidden');
+            mainContent.classList.add('fade-in');
+            
+            // Remove overlay from DOM entirely after animation completes
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 800);
+        }
+    </script>
+</body>
+</html>
 
