@@ -7,7 +7,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #fbf9f5; 
-    color: #111111; /* Black text */
+    color: #111111; /* Pure black text */
     overflow-x: hidden;
     text-align: center;
 }
@@ -21,7 +21,7 @@ body {
     transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
-/* Elegant Gold Heart Shape for J & G */
+/* Red Heart Shape Configuration */
 .heart-container {
     position: relative;
     width: 160px; height: 160px;
@@ -31,14 +31,14 @@ body {
 .heart-shape {
     position: absolute;
     width: 100px; height: 100px;
-    background-color: #c5a880; /* Soft Gold */
+    background-color: #a62626; /* Beautiful Deep Red */
     transform: rotate(-45deg);
     top: 20px;
 }
 .heart-shape::before, .heart-shape::after {
     content: ""; position: absolute;
     width: 100px; height: 100px;
-    background-color: #c5a880; border-radius: 50%;
+    background-color: #a62626; border-radius: 50%;
 }
 .heart-shape::before { top: -50px; left: 0; }
 .heart-shape::after { left: 50px; top: 0; }
@@ -56,7 +56,7 @@ body {
 
 .overlay button {
     background-color: #111111; color: #ffffff;
-    border: 1px solid #c5a880; padding: 14px 40px;
+    border: 1px solid #a62626; padding: 14px 40px;
     font-size: 0.9rem; letter-spacing: 2px;
     text-transform: uppercase; border-radius: 30px;
     cursor: pointer;
@@ -72,41 +72,47 @@ body {
 }
 
 .hero-section { padding: 60px 20px 30px 20px; }
-.main-om { font-size: 2.5rem; color: #111111; margin-bottom: 15px; } /* Om symbol is now crisp black */
+.main-om { font-size: 2.5rem; color: #111111; margin-bottom: 15px; } 
 .couple-names { font-family: 'Alex Brush', cursive; font-size: 4.2rem; color: #111111; margin-bottom: 15px; }
-.ampersand { font-family: 'Montserrat', sans-serif; font-size: 1.8rem; display: block; color: #c5a880; margin: 5px 0; }
+.ampersand { font-family: 'Montserrat', sans-serif; font-size: 1.8rem; display: block; color: #8c6d4f; margin: 5px 0; }
 .invite-text { font-size: 0.95rem; color: #555555; max-width: 500px; margin: 0 auto; line-height: 1.6; }
 
 .events-container { max-width: 500px; margin: 0 auto; padding: 20px; }
 .event-card { background: #ffffff; border-radius: 12px; padding: 40px 25px; margin-bottom: 35px; border: 1px solid #eeebe3; }
-.event-card h2 { font-size: 1.35rem; font-weight: 600; letter-spacing: 2px; color: #111111; text-transform: uppercase; margin-bottom: 25px; }
+
+/* Card headers changed to an elegant Dark Brown/Charcoal instead of pink */
+.event-card h2 { font-size: 1.35rem; font-weight: 600; letter-spacing: 2px; color: #544338; text-transform: uppercase; margin-bottom: 25px; }
 
 .date-badge { border-top: 1px solid #eeebe3; border-bottom: 1px solid #eeebe3; padding: 18px 0; margin-bottom: 25px; }
-.date-badge h3 { font-size: 0.9rem; letter-spacing: 3px; color: #c5a880; text-transform: uppercase; }
+.date-badge h3 { font-size: 0.9rem; letter-spacing: 3px; color: #8c6d4f; text-transform: uppercase; }
+
+/* Date highlight color changed from pink to black */
 .main-date { font-size: 2.4rem; font-weight: 600; color: #111111; margin: 6px 0; }
 
 .venue-name { font-size: 1.25rem; font-weight: 600; color: #111111; margin-bottom: 6px; }
 .venue-sub { font-size: 0.95rem; color: #555555; }
 
-.footer-gallery { margin-top: 20px; padding-bottom: 70px; }
-.footer-img { width: 85%; max-width: 420px; height: auto; border-radius: 8px; margin: 0 auto 30px auto; display: block; border: 6px solid #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
-.closing-text { font-family: 'Alex Brush', cursive; font-size: 3.2rem; color: #c5a880; }
+.footer-gallery { margin-top: 20px; padding-bottom: 70px; position: relative; max-width: 420px; margin: 0 auto; }
+.footer-img { width: 95%; height: auto; border-radius: 8px; margin: 0 auto 15px auto; display: block; border: 6px solid #ffffff; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+
+/* Right aligned "With Love" signature section */
+.with-love {
+    text-align: right;
+    font-size: 1.1rem;
+    font-family: 'Alex Brush', cursive; /* Beautiful matching script font */
+    color: #544338; /* Soft Brown */
+    margin-right: 25px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* "Do join us" switched to crisp black font color */
+.closing-text { font-family: 'Alex Brush', cursive; font-size: 3.2rem; color: #111111; margin-top: 25px; }
 
 @media (max-width: 480px) {
     .couple-names { font-size: 3.5rem; }
     .main-date { font-size: 2rem; }
 }
-    color: #f2a6b4;
-    margin: 5px 0;
-}
-
-.invite-text {
-    font-size: 0.95rem;
-    letter-spacing: 1px;
-    color: #7a6366;
-    max-width: 500px;
-    margin: 0 auto;
-    line-height: 1.6;
 }
 
 /* Event Container and Cards */
